@@ -1,0 +1,18 @@
+[Unit]
+Description=Polling check clocker alarm
+Requires=network.target
+After=multi-user.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/clocker_polling.pid
+ExecStart=/opt/ops/clocker_polling.sh
+
+StandardOutput=/var/log/clocker-alarm.log
+StandardError=/var/log/clocker-alarm.error
+
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
