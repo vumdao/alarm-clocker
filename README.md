@@ -1,10 +1,22 @@
-# Create Alarm Clocker Using Python And SystemD
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/lbayfsj2tv233gwz5bg4.png)
-## Python For Fun
+<p align="center">
+  <a href="https://dev.to/vumdao">
+    <img alt="Create AWS-CDK image container" src="https://dev-to-uploads.s3.amazonaws.com/i/lbayfsj2tv233gwz5bg4.png" width="500" />
+  </a>
+</p>
+<h1 align="center">
+  Create Alarm Clocker Using Python And SystemD
+</h1>
+<h3 align="center">
+  ⚛️ 📄 🚀
+</h3>
 
-- Make alarm clocker by using combine of systemD, python, and slackbot
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/h8i2ovhsmug5qi1n534c.png)
-## **1. Create SystemD service**
+<h1 align="left">
+  <a>Python For Fun</a>
+  <h3>Make alarm clocker by using combine of systemD, python, and slackbot</h3>
+  <img alt="Create AWS-CDK image container" src="https://dev-to-uploads.s3.amazonaws.com/i/h8i2ovhsmug5qi1n534c.png" width="100" />
+</h1>
+
+### **[Create SystemD service](#-Create-SystemD-service)**
 - The service will start along with your machine and running background process to check clocker
 ```
 ⚡ $ cat Clocker.service 
@@ -28,7 +40,7 @@ RestartSec=5s
 WantedBy=multi-user.target
 ```
 
-## **2. Create wrapper script to start service**
+### **[Create wrapper script to start service](#-Create-wrapper-script-to-start-service)**
 ```
 ⚡ $ cat /opt/ops/clocker_polling.sh 
 #!/bin/bash
@@ -39,7 +51,7 @@ echo $! > /var/run/clocker_polling.pid
 ⚡ $ sudo chmod +x /opt/ops/clocker_polling.sh
 ```
 
-## **3. Python script to run process**
+### **[Python script to run process](#-Python-script-to-run-process)**
 ```
 ⚡ $ cat /opt/ops/clocker.py 
 import os
@@ -84,7 +96,7 @@ if __name__ == '__main__':
             time.sleep(15)
 ```
 
-## **4. Start service**
+### **[Start systemD service](#-Start-systemD-service)**
 ```
 ⚡ $ sudo cp Clocker.service /lib/systemd/system/
 ⚡ $ systemctl start Clocker.service
@@ -103,6 +115,21 @@ Dec 27 22:04:31 jackdao systemd[1]: Starting Polling check clocker alarm...
 Dec 27 22:04:31 jackdao systemd[1]: Started Polling check clocker alarm.
 ```
 
-## **5. Enjoy!**
-- The service will send slack message to your slack-channel at 23:03 every day 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/4s8vannrzb5pux85uone.png)
+### **[Enjoy!](#-Enjoy!)**
+- The service will send slack message to your slack-channel at 23:03 every day
+
+<img alt="Create AWS-CDK image container" src="https://dev-to-uploads.s3.amazonaws.com/i/4s8vannrzb5pux85uone.png" width="200" />
+
+<h3 align="center">
+  <a href="https://dev.to/vumdao">:stars: Blog</a>
+  <span> · </span>
+  <a href="https://vumdao.hashnode.dev/">Web</a>
+  <span> · </span>
+  <a href="https://www.linkedin.com/in/vu-dao-9280ab43/">Linkedin</a>
+  <span> · </span>
+  <a href="https://www.linkedin.com/groups/12488649/">Group</a>
+  <span> · </span>
+  <a href="https://www.facebook.com/CloudOpz-104917804863956">Page</a>
+  <span> · </span>
+  <a href="https://twitter.com/VuDao81124667">Twitter :stars:</a>
+</h3>
