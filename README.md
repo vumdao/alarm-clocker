@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://dev.to/vumdao">
-    <img alt="Create AWS-CDK image container" src="https://dev-to-uploads.s3.amazonaws.com/i/lbayfsj2tv233gwz5bg4.png" width="500" />
+    <img src="https://dev-to-uploads.s3.amazonaws.com/i/lbayfsj2tv233gwz5bg4.png" width="500" />
   </a>
 </p>
 <h1 align="center">
@@ -13,7 +13,7 @@
 <h1 align="left">
   <a>Python For Fun</a>
   <h3>Make alarm clocker by using combine of systemD, python, and slackbot</h3>
-  <img alt="Create AWS-CDK image container" src="https://dev-to-uploads.s3.amazonaws.com/i/h8i2ovhsmug5qi1n534c.png" width="100" />
+  <img src="https://dev-to-uploads.s3.amazonaws.com/i/h8i2ovhsmug5qi1n534c.png" width="100" />
 </h1>
 
 ### **[Create SystemD service](#-Create-SystemD-service)**
@@ -118,7 +118,7 @@ Dec 27 22:04:31 jackdao systemd[1]: Started Polling check clocker alarm.
 ### **[Enjoy!](#-Enjoy!)**
 - The service will send slack message to your slack-channel at 23:03 every day
 
-<img alt="Create AWS-CDK image container" src="https://dev-to-uploads.s3.amazonaws.com/i/4s8vannrzb5pux85uone.png" width="200" />
+<img src="https://dev-to-uploads.s3.amazonaws.com/i/4s8vannrzb5pux85uone.png" width="200" />
 
 <h3 align="center">
   <a href="https://dev.to/vumdao">:stars: Blog</a>
